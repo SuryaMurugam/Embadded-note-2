@@ -1,0 +1,29 @@
+ARM :
+   ARM is a family of RISC instruction set architectures (ISAs) for computer processors. 
+Arm Ltd. develops the ISAs and licenses them to other companies, who build the physical 
+devices that use the instruction set.
+
+HISTORY:
+    The applications of the ARM Process start with getting knowledge of the ARM Processor’s history. 
+Before ARM, x86 processors were used, which were launched in 1978. Whenever we remove the predefined 
+instructions like complex instructions and hard-to-implement instructions, the remaining 
+instructions take less power and pace and run faster, this is called Reduced Instruction 
+Set Computer Architecture. x86 is a Complex Instruction Set Architecture . 
+
+
+FEATURE:
+    Multiprocessing System
+    Tightly Coupled Memory
+    Memory Management
+    Thumb-2 Technology
+    One-Cycle Execution Time
+    Pipelining
+    A large number of Registers
+
+RISC: 
+*simple but powerful instructionsthatexecute within a single cycle
+at high clock speed. 
+*Results in simple design and fast clock rate.
+*The distinction blurs because CISC implements
+RISC concepts.
+
