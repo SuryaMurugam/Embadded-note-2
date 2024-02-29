@@ -1,9 +1,29 @@
-PID:
+Process ID:
+   unique identifier assigned to a running process on a system. 
+Retrieving the PID of a just-started process can be useful for monitoring and controlling the behavior of that process.
+For example, the PID can be used for termination at a later stage or to avoid running concurrent processes.
 
 FORK:
-    creat a new process by duplicate the calling process.
-new process referred child process.
-return value: PID child process return the parent,0 is return child.
+*creat a new process by duplicate the calling process.
+*new process referred child process.
+*return value: PID child process return the parent,0 is return child.
 
+EX:
+  #include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+int main()
+{
+   int cpid = fork();
+   if (cpid == 0)
+       printf("Hello I am child\n");
+   else
+       printf("Hello I am parent\n");
+   return 0;
+}
+OUTPUT:
+   Hello I am parent
+   Hello I am child
 
 
