@@ -1,0 +1,9 @@
+PID:
+
+FORK:
+    creat a new process by duplicate the calling process.
+new process referred child process.
+return value: PID child process return the parent,0 is return child.
+
+
+
