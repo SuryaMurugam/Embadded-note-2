@@ -1,0 +1,37 @@
+FORK :
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[])
+{
+   if(argc!=2){
+      printf("Must enter one agrument (an integer)\n");
+      exit(1);
+   }
+   int n = atoi(argv[1]);
+   int i;
+   for (i=1;i<=n;i++)
+      fork();
+   printf("PHYTEC\n");
+   exit(0);
+}
+
+OUTPUT:
+Parent counter is:0
+Parent counter is:1
+Parent counter is:2
+Child counter is:100
+Child counter is:101
+Child counter is:102
+
+ZOMBIE:
+  use to kill the parent process.
+process was killed by using PID.
+  ZOMBIE.C
+       open new tab and given ps -ax
+       it will show 2 times ./a.out one is zombie another one is parent.
+       if we want to kill the process give kill 9 (id) then the process will killed.
+       Kill -l ->to kill the zombie process.
+
+
